@@ -1,0 +1,21 @@
+body {
+    grid-template-areas:
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . f . . . . ."
+    ". . . . . f . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . .";
+}
+#formSigin {
+    display: flex;
+    grid-area: f;
+    text-align: center;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 3px;
+    border-radius: 5px;
+    flex-direction: column;
+    background-color: #a3a3a3;
+}

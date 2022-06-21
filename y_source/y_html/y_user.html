@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('y_source', path='y_css/y_global.css') }}">
+        <link rel="stylesheet" href="{{ url_for('y_source', path='y_css/y_user.css') }}">
+        <title>{{ data.nickname }}</title>
+    </head>
+    <body>
+        <header id="headerUser"></header>
+        <div id="divUser">
+            <p id="pNickName">{{ data.nickname }}</p>
+        </div>
+        <div id="divChat">
+            
+        </div>
+        <div id="divCorrespondence">
+            <form id="inputUserFind" method="get">
+                <input type="text" name="nickname">
+                <input type="submit" value="Искать">
+            </form>
+            <hr id="hr">
+        </div>
+        <footer id="footerUser"></footer>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    grid-template-areas:
+    "h h h h h h h h h h h"
+    ". . . . . . . . . . ."
+    ". u u u u . c c c c ."
+    ". u u u u . c c c c ."
+    ". u u u u . c c c c ."
+    ". . . . . . c c c c ."
+    ". l l l l . c c c c ."
+    ". l l l l . c c c c ."
+    ". l l l l . c c c c ."
+    ". . . . . . . . . . ."
+    "f f f f f f f f f f f";
+}
+
+/* Пользователь */
+#divUser {
+    display: grid;
+    grid-area: u;
+    grid-template-areas:
+    "p p p p p"
+    "p p p p p"
+    "p p p p p"
+    "n n n n n";
+}
+#pNickName {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    grid-area: n;
+}
+
+#divChat {
+    grid-area: c;
+}
+#headerUser {
+    grid-area: h;
+}
+#footerUser {
+    grid-area: f;
+}
+#divCorrespondence {
+    display: flex;
+    grid-area: l;
+    background-color: red;
+}
