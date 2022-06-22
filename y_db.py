@@ -9,6 +9,9 @@ db_session = sessionmaker()()
 db = declarative_base(bind=db_engine)
 # создание моделей
 import y_model.y_model_user
+import y_model.y_model_chat
+import y_model.y_model_message
+import y_model.y_model_chat_member
 # создание таблиц
 db.metadata.create_all(db_engine)
 

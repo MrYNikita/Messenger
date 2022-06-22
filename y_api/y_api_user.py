@@ -22,7 +22,7 @@ def api_user_create(user: SchemUserCreate):
 async def api_user_get_by_id(id: int):
     return crud_user_get_by_id(db_session,id)
 
-@api.get('/user/{nickname}', response_model=list[SchemUser])
+@api.get('/user/nickname/{nickname}', response_model=list[SchemUser])
 def api_user_get_by_nickname(nickname: str):
     return crud_user_get_by_nickname(db_session,nickname)
 

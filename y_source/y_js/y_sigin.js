@@ -11,7 +11,9 @@
         
         }).then(async (response) => {
 
-            let user = await response.json();
+            let jectUser = await response.json();
+
+            sessionStorage.setItem('y_id', jectUser.id);
 
             location = `http://localhost:8000/user/authorizate/login/${form.elements.login.value}/password/${form.elements.password.value}`;
 

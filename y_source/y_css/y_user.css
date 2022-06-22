@@ -36,14 +36,33 @@ body {
     display: grid;
     grid-area: l;
     grid-template-areas:
-    "f f f f f"
-    "l l l l l"
-    "l l l l l"
-    "l l l l l"
-    "l l l l l";
+    "f"
+    "l"
+    "l"
+    "l"
+    "l"
+    "l";
+}
+#divContactList {
+    color: #fff;
+    display: flex;
 }
 #divContactFind {
     grid-area: f;
+}
+.divContact {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: space-between;
+}
+.divContact > * {
+    flex-grow: 1;
+    text-align: center;
+}
+.divContact > button {
+    color: #000;
 }
 
 #divChat {
