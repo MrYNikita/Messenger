@@ -3,10 +3,10 @@ from pydantic import BaseModel
 class SchemBaseChat(BaseModel):
     pass
 
-class SchemChatCreate(BaseChat):
+class SchemChatCreate(SchemBaseChat):
     pass
 
-class SchemChat(BaseChat):
+class SchemChat(SchemBaseChat):
     id: int
 
     class Config:

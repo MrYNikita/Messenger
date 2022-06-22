@@ -11,7 +11,7 @@ db = declarative_base(bind=db_engine)
 import y_model.y_model_user
 import y_model.y_model_chat
 import y_model.y_model_message
-import y_model.y_model_chat_member
+import y_model.y_model_member
 # создание таблиц
 db.metadata.create_all(db_engine)
 

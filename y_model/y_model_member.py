@@ -1,6 +1,6 @@
 from y_db import *
 
-class ModelChatMember(db):
+class ModelMember(db):
     __tablename__ = 'ChatMember'
     id = Column(Integer, Sequence('ChatMember_id_seq'), primary_key=True)
     id_user = Column(Integer)

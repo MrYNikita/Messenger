@@ -1,5 +1,4 @@
 # импорт библиотек
-from cmath import log
 from fastapi import *
 from fastapi.requests import *
 from fastapi.responses import *

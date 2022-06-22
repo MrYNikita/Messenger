@@ -65,9 +65,48 @@ body {
     color: #000;
 }
 
+/* чат */
 #divChat {
+    display: grid;
+    grid-area: c;
+    background-color: #fff;
+    grid-template-areas:
+    'h'
+    'c'
+    'c'
+    'c'
+    'c'
+    'c'
+    'a'
+}
+#divChatHeader {
+    grid-area: h;
+    border-left: 0px;
+    border-style: solid;
+    border-color: #343434;
+    border-right: 0px;
+    border-radius: 5px 5px 0 0;
+    background-color: #a3a3a3;
+}
+#divChatContent {
     grid-area: c;
 }
+#divChatActive {
+    display: flex;
+    grid-area: a;
+    border-left: 0px;
+    border-style: solid;
+    border-color: #343434;
+    border-right: 0px;
+    border-radius: 0 0 5px 5px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #a3a3a3;
+}
+#divChatActive > * {
+    text-align: center;
+}
+
 #headerUser {
     grid-area: h;
 }
