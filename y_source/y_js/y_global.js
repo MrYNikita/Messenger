@@ -1,0 +1,5 @@
+(() => {
+
+    let stringUrl = window.location + '';
+
+})();

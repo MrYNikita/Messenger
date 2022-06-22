@@ -16,13 +16,14 @@
         <div id="divChat">
             
         </div>
-        <div id="divCorrespondence">
-            <form id="inputUserFind" method="get">
-                <input type="text" name="nickname">
-                <input type="submit" value="Искать">
-            </form>
-            <hr id="hr">
+        <div id="divContact">
+            <div id="divContactFind">
+                <input type="text">
+                <button id="buttonContactFind">Искать</button>
+            </div>
         </div>
         <footer id="footerUser"></footer>
+        <script src="{{ url_for('y_source', path='y_js/y_global.js') }}"></script>
+        <script src="{{ url_for('y_source', path='y_js/y_user.js') }}"></script>
     </body>
 </html>

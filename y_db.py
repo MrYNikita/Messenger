@@ -11,3 +11,4 @@ db = declarative_base(bind=db_engine)
 import y_model.y_model_user
 # создание таблиц
 db.metadata.create_all(db_engine)
+

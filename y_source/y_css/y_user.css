@@ -13,8 +13,9 @@ body {
     "f f f f f f f f f f f";
 }
 
-/* Пользователь */
+/* пользователь */
 #divUser {
+    color: #fff;
     display: grid;
     grid-area: u;
     grid-template-areas:
@@ -30,6 +31,21 @@ body {
     grid-area: n;
 }
 
+/* контакты */
+#divContact {
+    display: grid;
+    grid-area: l;
+    grid-template-areas:
+    "f f f f f"
+    "l l l l l"
+    "l l l l l"
+    "l l l l l"
+    "l l l l l";
+}
+#divContactFind {
+    grid-area: f;
+}
+
 #divChat {
     grid-area: c;
 }
@@ -38,9 +54,4 @@ body {
 }
 #footerUser {
     grid-area: f;
-}
-#divCorrespondence {
-    display: flex;
-    grid-area: l;
-    background-color: red;
 }
