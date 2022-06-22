@@ -15,7 +15,11 @@ if __name__ == '__main__': uvicorn.run(app='y_manager:api', host='127.0.0.1', po
 from y_api.y_api_user import api_router_user
 from y_api.y_api_chat import api_router_chat
 from y_api.y_api_member import api_router_member
+from y_api.y_api_message import api_router_message
+from y_api.y_api_chat_pair import api_router_chat_pair
 # подключение роутеров
 api.include_router(api_router_user)
 api.include_router(api_router_chat)
 api.include_router(api_router_member)
+api.include_router(api_router_message)
+api.include_router(api_router_chat_pair)

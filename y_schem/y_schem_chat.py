@@ -1,12 +1,27 @@
 from pydantic import BaseModel
 
-class SchemBaseChat(BaseModel):
+# схема парных чатов
+class SchemBaseChatPair(BaseModel):
+    id_user_one: int
+    id_user_two: int
+
+class SchemChatPairCreate(SchemBaseChatPair):
     pass
 
-class SchemChatCreate(SchemBaseChat):
+class SchemChatPair(SchemBaseChatPair):
+    id: int
+
+    class Config:
+        orm_mode = True
+
+# схема групповых чатов
+class SchemBaseChatGroup(BaseModel):
     pass
 
-class SchemChat(SchemBaseChat):
+class SchemChatGroupCreate(SchemBaseChatGroup):
+    pass
+
+class SchemChatGroup(SchemBaseChatGroup):
     id: int
 
     class Config:
